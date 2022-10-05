@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-1</title>
+
+    <style>
+        
+        table,tr,td,th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="./aboutus.html">AboutUs</a>
+                <a href="./tutorials.html">Tutorials</a>
+            </span>
+        </nav>
+    </header>   
+    <main>
+        <h1>let's learn how to make a simple web page </h1>
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p> <strong>Learning</strong> is an action that takes <em>time</em> and <em>patience</em>. 
+                If a learning process is completed in a short time, that topic is <strong>not understood</strong>.
+            </p>
+        </section>
+        <section class="beforeStart">
+            <h2>Before Start</h2>
+            <p>If you want to start learning, first of all we need check somethigs. Lets check it</p>
+            <ol>
+                <li>Install <strong>chrome</strong> browser</li>
+                <li>Intsall <strong>vs-code</strong></li>
+                <li>Install <strong>git</strong></li>
+                <li>Create a <strong>github</strong> account</li>
+            </ol>
+        </section>
+
+        <section class="startLearn">
+            <h2>Let's learn HTML</h2>
+            <h3>What is the <em>HTML</em></h3>
+            <p>If eveythings is ok, we can start</p>
+            <img src="./img/html.jpg" alt="HTML Image">
+            <ul>
+                <li> <em>HTML</em> stands for Hyper Text Markup Language</li>
+                <li><em>HTML</em> describes the structure of a Web page</li>
+                <li><em>HTML</em> elements tell the browser how to display the content</li>
+            </ul>
+        </section>
+
+        <section class="contactForm">
+            <h3>If you have any question, please contact us</h3>
+            <form action="app.js">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email address..">
+                <br>
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">javascript</option>
+                </select>
+                <br>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="contactTable">
+            <h2>Contact Table</h2>
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+                <tr>
+                  <td>Fatih</td>
+                  <td>Yavuz</td>
+                  <td>fatih.yavuz@company.com</td>
+                </tr>
+                <tr>
+                  <td>Jack</td>
+                  <td>Brown</td>
+                  <td>jack.brown@company.com</td>
+                </tr>
+              </table>
+        </section>
+    </main>
+    <footer>
+        <section class="whatWeAreDoing">
+            <h2>What is our aim?</h2>
+            <p>
+                Our aim is to train new talents for the developing IT sector. 
+                If you want to work in the field of IT, you can improve yourself with the tutorials we share completely free.
+            </p>
+        </section>
+
+        <section class="copyright">
+            <h5>copyright</h5>
+            <p>
+                Copyright 2022-2022 by Fatih Yavuz. All Rights Reserved.
+            </p>
+    
+            <img src="./img/copyright.png" alt="copyright" height="50" width="50">
+    
+        </section>
+    </footer>
+</body>
+</html>

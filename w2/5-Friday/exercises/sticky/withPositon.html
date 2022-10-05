@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Exercise With Flex</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+             height: 100vh; 
+        }
+        section{
+            border: 2px solid green;
+            text-align: center;
+        }
+
+        .header{
+            font-size: 48px;
+        }
+
+        .content {
+            text-align: center;
+            font-size: 100px;
+            background: #333;
+        }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 48px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="header">Header</section>
+        <section class="content">Content
+            <h1>Some Content</h1>
+            <h1>Some Content</h1>
+            <h1>Some Content</h1>
+            <h1>Some Content</h1>
+        </section>
+        <section class="footer">Footer</section>
+    </main>
+</body>
+</html>

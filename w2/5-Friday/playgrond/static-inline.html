@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-inline-block</title>
+
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+        ul{
+            border: 2px solid green;
+        }
+        li{
+            font-size: 36px;
+            background-color: gray;
+            width: 200px;
+            height: 100px;
+        }
+        .my-inline > li{
+            display: inline;
+        }
+        
+        .my-block > li{
+            display: block;
+        }
+
+        .my-inline-block > li{
+            display: inline-block;
+        }
+
+        .my-none > li{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flow of HTML elements</h1>
+    <p>to control an element how is displayed we can use<b>display</b>property.Values of display property can be 
+        <b>block</b>,<b>inline</b>,<b>block-inline</b>,<b>none</b>. 
+    </p>
+    <p>block is defoult value for most of HTML element's display property and provides that all elements flow through as column</p>
+    <p>inline allows us put html elements in a row</p>
+    <p>what about inline-block.The difference between inline and inline-block is that inline-block allows us set width and width,but
+        we can not set width and height with inline.
+    </p>
+    <h3>This is for display:inline</h1>
+    <ul class="my-inline">
+        <li>First</li>
+        <li>Second</li>
+        <li>Thirth</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+        <li>Eighth</li>
+        <li>Nineth</li>
+        <li>Tenth</li>
+        <li>Eleventh</li>
+        <li>Twelveth</li>
+    </ul>
+
+    <h3>This is for display:block</h1>
+    <ul class="my-block">
+        <li>Fisrt</li>
+        <li>Second</li>
+        <li>Thirth</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+    </ul>
+
+    <h3>This is for display:inline-block</h1>
+    <ul class="my-inline-block">
+        <li>Fisrt</li>
+        <li>Second</li>
+        <li>Thirth</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+        <li>Eighth</li>
+        <li>Nineth</li>
+        <li>Tenth</li>
+        <li>Eleventh</li>
+        <li>Twelveth</li>
+    </ul>
+    <h3>none</h3>
+    <p>we can not see below list because value of display is <b>none</b></p>
+    <ul class="my-none">
+        <li>First</li>
+        <li>Second</li>
+    </ul>
+</body>
+</html>

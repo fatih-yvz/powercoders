@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: beige;
+}
+
+
+.content{
+    display: grid;
+    grid-area: content;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;  
+}
+article{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.signup{
+    background-color: gray;
+    /* grid-area: signup; */
+}
+
+
+.feature-1{
+    background-color: brown;
+    /* grid-area: feature-1; */
+}
+
+.feature-2{
+    background-color: cadetblue;
+    /* grid-area: feature-2; */
+}
+
+.feature-3{
+    background-color: yellow;
+    /* grid-area: feature-3; */
+}
+
+/* .feature{
+    grid-area: feature;
+} */
+@media only screen and (max-width: 800px) and (min-width: 400px){
+    .feature{
+        display: grid;
+        grid-template-columns: auto auto;
+    }    
+}
+
+@media only screen and (min-width: 800px){
+    .content{
+        grid-area: content;
+    }
+
+    .signup{
+        grid-area: signup;
+        height: 100px;
+    }
+
+    .feature-1{
+        grid-area: feature-1;
+    }
+
+    .feature-2{
+        grid-area: feature-2;
+    }
+
+    .feature-3{
+        grid-area: feature-3;
+    }
+
+    .feature{
+        display: grid;
+        grid-area: feature;
+        grid-template-areas: 'feature-1 feature-2 feature-3' 'signup signup signup' ;
+    }
+    
+   
+    main{
+        display: grid;
+        grid-template-areas: 'feature' 'content' ; 
+    }
+
+
+
+}

@@ -1,0 +1,28 @@
+FIRSTLY PUSH GITHUB
+
+1-) w2-Mon-Exercise2(newspaper-skeleton)
+https://slides.powercoders.org/02-01-html-best-practice.html#/56
+
+--------------------------------------------------------------
+
+2-)w2-Mon-Exercise3(create portfolio skelton)
+https://slides.powercoders.org/02-01-html-best-practice.html#/57
+
+--------------------------------------------------------------
+Again Play
+perfect game for css selector: https://flukeout.github.io/
+
+--------------------------------------------------------------
+
+3-)Play CSS grid game : https://cssgridgarden.com/#en
+
+--------------------------------------------------------------
+Again Play
+Game for css flex : https://flexboxfroggy.com/
+
+--------------------------------------------------------------
+
+4-) w3-Mon-Exercises(correction)
+	Write Psoudeo Code and visualize them on flow chart
+
+5-) w3-Tue-Exercise2-3-4-5

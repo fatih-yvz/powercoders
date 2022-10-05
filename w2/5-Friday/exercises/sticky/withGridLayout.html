@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky-Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            display: grid;
+            grid-template-rows: auto auto auto;
+        }
+
+        header{
+            font-size: 48px;
+     
+        }
+
+        main {
+            text-align: center;
+            font-size: 80px;
+            background: #333;
+       
+        }
+        footer{
+            width: 100%;
+            font-size: 48px;
+            background-color: red;
+            color: white;
+            grid-row: 2/3
+          
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        Content
+        <h1>Some Content</h1>
+        <h1>Some Content</h1>
+        <h1>Some Content</h1>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>

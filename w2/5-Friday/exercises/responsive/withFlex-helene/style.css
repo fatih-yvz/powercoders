@@ -1,0 +1,88 @@
+/* reset padding and margin for all elements*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%; /*to filling the horizental axis*/
+    height: 200px; /*to giving some height*/
+    background-color: goldenrod;
+    /*to center h1 element inside of the header*/
+    display: flex; 
+    justify-content: center; /*horizental axis*/
+    align-items: center; /*vertical axis*/
+}
+
+/*giving same prop. for all section */
+section{
+    width: 100%; /* fill all horizenal axis */
+   /* below three lines of code to center for two axis*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*for mobile screen */
+    flex-direction: column;
+}
+
+/*set content*/
+.content{
+    height: 200px;
+    background-color:beige;
+}
+
+article{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    background-color: cornflowerblue;
+}
+
+.feature-1{
+    background-color: yellow;
+}
+
+.feature-2{
+    background-color: green;
+}
+
+.feature-3{
+    background-color: gainsboro;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px){
+    .feature{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .feature>article{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    main{
+        flex-direction: column-reverse;
+    }
+
+    .feature{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .feats{
+        width: 33.3%;
+    }
+
+    .signup{
+        order: 4;
+        height: 150px;
+    }
+}

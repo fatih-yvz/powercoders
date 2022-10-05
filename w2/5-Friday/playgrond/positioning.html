@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 5px;
+        }
+        div>div{
+            height: 40px;
+        }
+        .parent{
+            background-color: lightblue;
+            border: 2px solid black;
+            position: static;
+        }
+
+        .child-one{
+            background-color: yellow;
+            position: sticky;
+            bottom: 10px;
+            left: 10px;
+            
+            
+        }
+
+        .child-two{
+            background-color: brown;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .child-three{
+            background-color: coral;
+            position:absolute;
+            top: 10px;
+            left: 30px;
+        }
+
+        .child-four{
+            background-color: black;
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vh;
+        }
+
+        .parent-2{
+            background-color: lightblue;
+            border: 2px solid black;
+            position: sticky;
+            top: 50px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Positioning</h1>
+    <div class="parent-2">Sticky</div>
+    <p>To define position of any html element , we use <b>position</b> property
+        It has five different values. 
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+        </ul>
+    </p>
+
+    <h3>static</h3>
+    <p>it is default value for all html elements. if any element's display value dont set with one of other values
+        we can not arranged top, bottom, right and left properties.
+    </p>
+
+    <h3>relative</h3>
+    <p>if a html element is set as position:relative, the element are moved with 
+        top,bottom,left and right.The important thing is where to take starting point as reference
+        this is major difference between relative and absolute. 
+        Relative take next element border for startin point as reference.so we can say
+        relative interact with neigbhoors elements.    
+    </p>
+
+    <h3>absolute</h3>
+    <p>like relative, absolute also allows movement, but there is a difference.Absolute accepts
+    windows's starting point so we can say an absolute element is very free, it can go whereever want.     
+    </p>
+
+    <h3>fixed</h3>
+    <p>an element it's position value are set as fixed can be set with top,bottom,right and left.and it's position dont 
+        change wiht scrolling.
+    </p>
+
+    <h3>Sticky</h3>
+    <p>sticky allows us if we dont scroll the page sticky element stay own place but if we
+        scroll the page and scrolling come to end of the page sticky element stay end of the page.
+    </p>
+    <h2>Visual Examples</h2>
+    <div class="parent">
+        Parent
+        <div class="child-one">Static</div>
+        <div class="child-two">Relative</div>
+        <div class="child-three">Absolute</div>
+        <div class="child-four">Fixed</div>
+    </div>  
+</body>
+</html>
